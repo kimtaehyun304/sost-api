@@ -473,8 +473,9 @@ public class InitDb {
                         playerTransfers.add(playerTransfer);
                     }
 
-                    /*
-                    // db에 없는 팀 저장 -> 한건 씩 조회하니 너무 느림
+
+                    /* ★선수 이적 정보 INSERT (초기 ver)
+                    db에 없는 팀 저장 필요 -> 중복 체크를 위해 한건 씩 조회하니 너무 느림
                     for (PlayerTransfer playerTransfer : playerTransfers) {
                         Long inTeamId = playerTransfer.getInTeam().getId();
                         if(inTeamId != null){
@@ -495,7 +496,7 @@ public class InitDb {
                 }
             }
 
-            //★선수 이적 정보 INSERT
+            //★선수 이적 정보 INSERT (개선 ver)
             List<Team> foundTeams = teamRepository.findAllInId(rapidTeamIds);
             //contains 성능을 위해 set 사용
             Set<Long> foundTeamIds = foundTeams.stream().map(Team::getId).collect(Collectors.toSet());
