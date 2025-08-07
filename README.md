@@ -27,7 +27,7 @@
 <ul>
    <li>
      <a href="https://github.com/kimtaehyun304/sost-api/blob/a7de49b8869b961db8d5696ae44aeb2a40a59ddc/src/main/java/com/daelim/sfa/InitDb.java#L413">
-       배치 작업 속도 개선 (4H → 1H)
+        단건 조회를 차집합 조회로 변경하여, 배치 작업 속도 개선 (4H → 1H)
      </a>
    </li>
   <li>contains 성능을 위해 List 대신 Set 사용</li>
