@@ -26,7 +26,7 @@
 성능 개선
 <ul>
    <li>
-     <a href="https://github.com/kimtaehyun304/sost-api/blob/a7de49b8869b961db8d5696ae44aeb2a40a59ddc/src/main/java/com/daelim/sfa/InitDb.java#L413">
+     <a href="https://github.com/kimtaehyun304/sost-api/blob/5acbcb8163d1c741e482bd000a243c54318e63af/src/main/java/com/daelim/sfa/InitDb.java#L499">
         단건 조회를 차집합 조회로 변경하여, 배치 작업 속도 개선 (4H → 1H)
      </a>
    </li>
