@@ -31,8 +31,7 @@
      </a>
    </li>
   <li>contains 성능을 위해 List 대신 Set 사용</li>
-  <li>배치 작업 속도 개선을 위해, 클래스 레벨에 @Transactional 적용</li>
-  
+  <li>'변경 감지' UPDATE 트랜잭션을 줄이기 위해, 스케줄러 클래스 레벨에 @Transactional 적용</li>
 </ul>
 
     
