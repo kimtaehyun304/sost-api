@@ -28,14 +28,13 @@
 <ul>
    <li>
      <a href="https://github.com/kimtaehyun304/sost-api/blob/5acbcb8163d1c741e482bd000a243c54318e63af/src/main/java/com/daelim/sfa/InitDb.java#L499">
-        단건 조회를 차집합 조회로 변경하여, 배치 작업 속도 개선 (4H → 1H)
+        단건 조회 반복을 차집합 조회로 변경하여, 배치 작업 속도 개선 (4H → 1H)
      </a>
    </li>
   <li>contains 메서드 성능을 위해 List 대신 Set 사용</li>
-  <li>'변경 감지' UPDATE 트랜잭션을 줄이기 위해, 스케줄러 클래스 레벨에 @Transactional 적용</li>
+  <li>배치 작업 UPDATE 트랜잭션을 줄이기 위해, 배치 클래스에 @Transactional 적용</li>
 </ul>
 
-    
 ### 기타
 <ul>
   <li>지금 코드는 bindingResult 사용 중 → 공통 예외처리로 바꾸자</li>
