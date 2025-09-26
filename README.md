@@ -37,7 +37,7 @@ spring (boot3·security6), hibernate6, swagger, aws(ec2·rds)
 ### 기타
 <ul>
   <li>지금 코드는 bindingResult 사용 중 → 공통 예외처리로 바꾸자</li>
-  <li>putty·fileZilla로 수동 배포</li>
+  <li>putty·fileZilla로 수동 배포 (현재 배포 중단)</li>
 </ul>
 
 ### API
