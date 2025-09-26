@@ -1,16 +1,15 @@
+<h1>해외 축구 리그 통계/ 2024.09 ~ 12</h1>
+
 ### 소개
 <ul>
-  <li>축구 4대 리그 정보 제공 (선수와 팀의 전적·통계·랭킹)</li>
-  <li>리그 데이터는 외부 API (rapid-api) 사용</li>
-  <li>팀원 4명 중 혼자 백엔드 담당</li>
-  <li>개발 기간: 2024-09-10 ~ 12-10</li>
-  <li>베포 중단 상태</li>
+  <li>해외 축구 4대 리그 데이터 제공 (프리미어 리그·라리가·세리에A·분데스리가)</li>
+  <li>데이터는 외부(rapid-api)에서 가져옴</li>
+  <li>ex) 과거 데이터는 db에 일괄 저장하고, 최신 데이터는 주기적으로 업데이트</li>
+  <li>팀 프로젝트지만, 혼자 백엔드 담당</li>
 </ul>
 
 ### 프로젝트 스킬
-<ul>
-  <li>spring (boot3·security6) / hibernate6 / swagger / aws</li>
-</ul>
+spring (boot3·security6), hibernate6, swagger, aws(ec2·rds)
 
 ### 프로젝트로 얻은 경험
 스케줄러 작업 (@Schedule)
@@ -24,14 +23,14 @@
   <li>EC2 시간대가 UTC라 스케줄러도 UTC 기준으로 실행됨 → KST로 변경</li>
 </ul>
 
-성능 개선
+배치 작업 속도 개선
 <ul>
    <li>
      <a href="https://github.com/kimtaehyun304/sost-api/blob/5acbcb8163d1c741e482bd000a243c54318e63af/src/main/java/com/daelim/sfa/InitDb.java#L499">
         단건 조회 반복을 차집합 조회로 변경하여, 배치 작업 속도 개선 (4H → 1H)
      </a>
    </li>
-  <li>contains 메서드 성능을 위해 List 대신 Set 사용</li>
+  <li>컬렉션 contains 메서드 성능을 위해 컬렉션 자료구조 변경 (List → Set)</li>
   <li>배치 작업 UPDATE 트랜잭션을 줄이기 위해, 배치 클래스에 @Transactional 적용</li>
 </ul>
 
@@ -41,4 +40,14 @@
   <li>putty·fileZilla로 수동 배포</li>
 </ul>
 
-
+### API
+<ul>
+  <li>리그 정보 조회</li>
+  <li>이번 주 경기 일정 조회</li>
+  <li>선수·팀 상세 및 통계</li>
+  <li>선수·팀 검색</li>
+  <li>선수·팀 랭킹 조회</li>
+  <li>선수·팀 리뷰 조회·등록</li>
+  <li>팀 스쿼드 조회</li>
+  <li>연합 뉴스 축구 기사 조회 (하루에 한번 크롤링)</li>  
+</ul>
