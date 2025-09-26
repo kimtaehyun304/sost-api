@@ -48,6 +48,12 @@ spring (boot3·security6), hibernate6, swagger, aws(ec2·rds)
   <li>선수·팀 검색</li>
   <li>선수·팀 랭킹 조회</li>
   <li>선수·팀 리뷰 조회·등록</li>
-  <li>팀 스쿼드 조회</li>
+  <li>팀 스쿼드·포메이션 조회</li>
   <li>연합 뉴스 축구 기사 조회 (하루에 한번 크롤링)</li>  
 </ul>
+
+### erd
+<p align="center">
+<img src="https://github.com/user-attachments/assets/d77f9d4e-2029-42d5-97f7-37949068655b"/>
+</p>
+
