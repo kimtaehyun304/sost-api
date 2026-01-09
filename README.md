@@ -1,17 +1,23 @@
 <h1>해외 축구 리그 통계/ 2024.09 ~ 12</h1>
 
-### 소개
-<ul>
-  <li>해외 축구 4대 리그 데이터 제공 (프리미어 리그·라리가·세리에A·분데스리가)</li>
-  <li>데이터는 외부(rapid-api)에서 가져옴</li>
-  <li>ex) 과거 데이터는 db에 일괄 저장하고, 최신 데이터는 주기적으로 업데이트</li>
-  <li>팀 프로젝트지만, 혼자 백엔드 담당</li>
-</ul>
+### 담당 역할 (팀 프로젝트)
+* 혼자 백엔드 담당
+* 팀장 맡음
 
-### 프로젝트 스킬
-spring (boot3·security6), hibernate6, swagger, aws(ec2·rds)
+### 구조
+* 해외 축구 4대 리그 통계 제공 (프리미어 리그·라리가·세리에A·분데스리가)
+* 데이터는 rapid api 사이트에서 구매 (데이터에 맞게 mysql 설계)
+* 시즌 기간 동안에는 매일 업데이트
+* 연합 뉴스 매일 크롤링
+* cors 설정 (WebMvcConfigurer addCorsMappings)
+* 필터 체인 → 컨트롤러 (컨트롤러에서 jwt 추출)
 
-### 프로젝트로 얻은 경험
+### 기술
+* 스프링 부트3 (security6, jpa6, valid)
+* jsoup, swagger
+* aws(ec2·rds)
+
+### 트러블 슈팅
 스케줄러 작업 (@Schedule)
 <ul>
   <li>
@@ -31,7 +37,7 @@ spring (boot3·security6), hibernate6, swagger, aws(ec2·rds)
      </a>
    </li>
   <li>컬렉션 contains 메서드 성능을 위해 컬렉션 자료구조 변경 (List → Set)</li>
-  <li>배치 작업 UPDATE 트랜잭션을 줄이기 위해, 배치 클래스에 @Transactional 적용</li>
+  <li>배치 작업 UPDATE 트랜잭션 절약을 위해 트랜잭션 하나 사용</li>
 </ul>
 
 ### 기타
