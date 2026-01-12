@@ -7,7 +7,7 @@
 ### 구조
 * 해외 축구 4대 리그 통계 제공 (프리미어 리그 · 라리가 · 세리에A · 분데스리가)
 * 데이터는 rapid api 사이트에서 구매 (데이터에 맞게 mysql 설계)
-* 시즌 기간 동안에는 매일 업데이트
+* 시즌 기간 동안에는 매일 api 호출하고 saveOrUpdate 
 * 연합 뉴스 매일 크롤링
 * cors 설정 (WebMvcConfigurer addCorsMappings)
 * 필터 체인 → 컨트롤러 (컨트롤러에서 jwt 추출)
