@@ -33,9 +33,10 @@
 <ul>
    <li>
      <a href="https://github.com/kimtaehyun304/sost-api/blob/5acbcb8163d1c741e482bd000a243c54318e63af/src/main/java/com/daelim/sfa/InitDb.java#L499">
-        단건 조회 반복을 차집합 조회로 변경하여, 배치 작업 속도 개선 (4H → 1H)
+        단건 조회 반복을 차집합 조회로 변경하여, 중복 검사 속도 개선 (4H → 1H)
      </a>
    </li>
+  <li>ex) findOne() → newList.stream().filter(nl -> !savedList.contains(nl)) 변경</li>
   <li>컬렉션 contains 메서드 성능을 위해 컬렉션 자료구조 변경 (List → Set)</li>
   <li>배치 작업 UPDATE 트랜잭션 절약을 위해 트랜잭션 하나 사용</li>
 </ul>
