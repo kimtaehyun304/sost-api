@@ -37,7 +37,7 @@
      </a>
    </li>
   <li>ex) findOne() → newList.stream().filter(nl → !savedList.contains(nl)) 변경</li>
-  <li>차집합 removeAll()은 원본이 변경됨 → 변경감지가 동작해서 미사용</li>
+  <li>ㄴ차집합 removeAll()은 원본이 변경됨 → 변경감지가 동작해서 미사용</li>
   <li>컬렉션 contains 메서드 성능을 위해 컬렉션 자료구조 변경 (List → Set)</li>
   <li>배치 작업 UPDATE 트랜잭션 절약을 위해 트랜잭션 하나 사용</li>
 </ul>
