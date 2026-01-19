@@ -62,8 +62,11 @@
   <li>연합 뉴스 축구 기사 조회 (하루에 한번 크롤링)</li>  
 </ul>
 
-### erd
+### 캡처
 <p align="center">
-<img src="https://github.com/user-attachments/assets/d77f9d4e-2029-42d5-97f7-37949068655b"/>
+<img src="https://github.com/user-attachments/assets/0539d4b5-ed37-4f9c-9b3d-12026447189b"/>
 </p>
 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/cb21e7ed-fba0-4973-b5d9-1aa2474c0e1b"/>
+</p>
